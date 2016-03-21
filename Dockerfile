@@ -2,7 +2,7 @@ FROM alpine:3.3
 
 RUN apk update \
  && apk add openvpn openvpn-auth-ldap \
- && apk add tcpdump perl-net-telnet mtr
+ && apk add bash tcpdump perl-net-telnet mtr
 
 ENV config_file=/etc/openvpn/server.conf
 EXPOSE 1194
